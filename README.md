@@ -1,4 +1,4 @@
-# Install Cuda*8.0 + cuDNN5.1 + OpenCV.3.2.0 tutorial
+# Install Cuda + cuDNN + OpenCV tutorial
 
 ****
 
@@ -106,7 +106,7 @@
     ```Shell
         ./1_Utilities/deviceQuery/deviceQuery
     ```
-    ![image](https://github.com/samuel325365/aLittleLinuxThing/blob/master/install_linux_nvidiaDrivers_cuda_cudnn_opencv/cuda_samples.png)
+    ![image](https://github.com/samuel325365/Install_CUDA_Tutorial/blob/master/src/cuda_samples.png)
 
 
 ### 其他相關命令
