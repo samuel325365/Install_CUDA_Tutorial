@@ -1,4 +1,4 @@
-# Install Cuda + cuDNN + OpenCV tutorial
+# Install Nvidia Driver + Cuda + cuDNN + OpenCV tutorial
 
 ****
 
@@ -28,7 +28,7 @@
     ```
     重點是“x86_64”這一項，保證是x86架構，64bit系統
   
-2.  按下 `Alt` `Ctrl` `F1` 進入文字介面並關閉 `X Server`
+3.  按下 `Alt` `Ctrl` `F1` 進入文字介面並關閉 `X Server`
     ```Shell
         sudo /etc/init.d/lightdm stop
     ```
@@ -71,7 +71,15 @@
     ```
     裏面最後一行的 Kernel driver in use: nouveau 及為現在使用的顯卡驅動(裝完後會變成顯示：nvidia)
 
-3.  安裝cuda8.0
+4. 直接用apt-get 裝driver
+
+   ```Shell
+	sudo add-apt-repository ppa:graphics-drivers/ppa
+	sudo apt update
+	sudo apt-get install nvidia-390
+   ```
+
+5.  安裝cuda8.0
 
     ```Shell
         cd ~/Download
